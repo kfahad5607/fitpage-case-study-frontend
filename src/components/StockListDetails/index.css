@@ -1,0 +1,25 @@
+.stock-details__header {
+  background-color: #1686b0;
+  color: #fff;
+  padding: 1rem 1rem;
+  min-height: 5rem;
+}
+
+.stock-details__header--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.stock-details__body {
+  padding: 1rem;
+}
+
+.stock-details__criterias {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.stock-details__criteria-divider{
+  margin: .6rem 0;
+  font-size: 1.3rem;
+}

@@ -3,6 +3,7 @@ import { useStocksContext } from "../../context/StocksContext";
 import { useState, useEffect } from "react";
 import reactStringReplace from "react-string-replace";
 import { getTagColor } from "../../utils";
+import "./index.css";
 
 const StockListDetails = () => {
   const { id } = useParams();

@@ -1,8 +1,5 @@
-.not-found {
-  color: #fff;
-}
-
 .not-found__msg {
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;

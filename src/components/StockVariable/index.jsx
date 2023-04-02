@@ -27,7 +27,8 @@ const StockVariable = () => {
     indicator: StockVariableIndicator,
   };
   const renderComponent = () => {
-    if (!variable) return <NotFound />;
+    if (variable === null) return <h1 className="not-found__msg">Loading...</h1>;
+    if (variable === undefined) return <NotFound />;
 
     let Component = components[variable.type];
     return <Component variable={variable} />;

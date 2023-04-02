@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { titleCase } from "../../../../utils";
 
 const StockVariableIndicator = ({ variable }) => {
   const [parameter, setParameter] = useState(variable.default_value);
@@ -17,7 +18,7 @@ const StockVariableIndicator = ({ variable }) => {
           </div>
           <div className="stock-details__header stock-details__header--white">
             <div className="stock-input">
-              <label className="stock-input__label">{variable.parameter_name}</label>
+              <label className="stock-input__label">{titleCase(variable.parameter_name)}</label>
               <div className="stock-input__field">
                 <input type="number" value={parameter} onChange={(e) => setParameter(e.target.value)} />
               </div>
